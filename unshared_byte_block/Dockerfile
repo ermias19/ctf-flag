@@ -23,9 +23,10 @@ RUN apt-get update && \
     # apt-get autoremove && \
     # apt-get clean && \
     # rm -rf /var/lib/apt/lists/* && 
-    ./samba-4.6.4/configure   &&\
+    cd /home/sama-4.6.4/
+    ./configure   &&\
     make &&\
-    make install && \
+    install && \
 
     cp -r /home/samba-4.6.4/ctdb/tests/eventscripts/etc/ /etc/
     #service samba/smbd restart is not working 

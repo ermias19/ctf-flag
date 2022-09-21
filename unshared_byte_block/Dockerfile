@@ -30,7 +30,7 @@ RUN apt-get update && \
     cp -r /home/samba-4.6.4/ctdb/tests/eventscripts/etc/ /etc/
     #service samba/smbd restart is not working 
     smba -D
-    smd -D
+    smbd -D
      
 COPY run.sh  /usr/bin/run.sh
 RUN chmod 777 /usr/bin/run.sh

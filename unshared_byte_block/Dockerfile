@@ -1,7 +1,7 @@
 From ubuntu:18.04
 
 # Intall Samba 
-COPY  samba-4.6.4.tar.gz /home
+COPY samba-4.5.9.tar.gz /home
 RUN apt-get update && \
     apt-get update -y && \
     apt install python && \
